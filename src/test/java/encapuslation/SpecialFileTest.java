@@ -41,8 +41,8 @@ public class SpecialFileTest {
     sa.setValue("Changed " + attributeValue);
     sa.setName("Changed " + attributeName);
 
-    assertEquals(attributeName, sa.getName());
-    assertEquals(attributeValue, sa.getValue());
+    assertEquals(attributeName, sp.getAttributes().get(0).getName());
+    assertEquals(attributeValue, sp.getAttributes().get(0).getValue());
   }
 
   @Test
@@ -59,8 +59,8 @@ public class SpecialFileTest {
     owner.setName("Changed - " + ownerName);
     owner.setSurname("Changed - " + ownerSurName);
 
-    assertEquals(ownerName, owner.getName());
-    assertEquals(ownerSurName, owner.getSurname());
+    assertEquals(ownerName, sp.getOwner().getName());
+    assertEquals(ownerSurName, sp.getOwner().getSurname());
   }
 
 

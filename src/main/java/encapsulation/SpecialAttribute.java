@@ -1,7 +1,8 @@
 package encapsulation;
 
-// TODO: Do any necessary changes in order to avoid to keep the attribute values encapsulated
-public class SpecialAttribute {
+import java.io.Serializable;
+
+public class SpecialAttribute implements Serializable {
 
   private String name;
   private String value;

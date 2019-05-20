@@ -3,6 +3,8 @@ package encapsulation;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
+import org.apache.commons.lang3.SerializationUtils;
 
 public class SpecialFile {
 
@@ -13,12 +15,19 @@ public class SpecialFile {
   private String signature;
   private int size;
 
+  // There are multiple ways in order to accomplish the deep copy.
+  // https://www.baeldung.com/java-deep-copy
   public List<SpecialAttribute> getAttributes() {
-    return attributes;
+    return deepCloneAttributes(attributes);
   }
 
   public void setAttributes(List<SpecialAttribute> attributes) {
-    this.attributes = attributes;
+    this.attributes = deepCloneAttributes(attributes);
+  }
+
+  private List<SpecialAttribute> deepCloneAttributes(List<SpecialAttribute> attributes) {
+    return attributes.stream().map(
+        entry -> SerializationUtils.clone(entry)).collect(Collectors.toList());
   }
 
   public Integer getId() {
@@ -30,19 +39,19 @@ public class SpecialFile {
   }
 
   public byte[] getContents() {
-    return contents;
+    return contents.clone();
   }
 
   public void setContents(byte[] contents) {
-    this.contents = contents;
+    this.contents = contents.clone();
   }
 
   public Owner getOwner() {
-    return owner;
+    return SerializationUtils.clone(owner);
   }
 
   public void setOwner(Owner owner) {
-    this.owner = owner;
+    this.owner = SerializationUtils.clone(owner);
   }
 
   public String getSignature() {
