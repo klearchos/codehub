@@ -25,9 +25,8 @@ public class SpecialFile {
     this.attributes = deepCloneAttributes(attributes);
   }
 
-  private List<SpecialAttribute> deepCloneAttributes(List<SpecialAttribute> attributes) {
-    return attributes.stream().map(
-        entry -> SerializationUtils.clone(entry)).collect(Collectors.toList());
+  private List<SpecialAttribute> deepCloneAttributes(List<SpecialAttribute> attr) {
+    return attr.stream().map(SerializationUtils::clone).collect(Collectors.toList());
   }
 
   public Integer getId() {
