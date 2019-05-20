@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+// TODO: Do any necessary changes
 public class SpecialFile {
 
   private Integer id;

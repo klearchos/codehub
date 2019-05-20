@@ -1,6 +1,6 @@
 package encapsulation;
 
-// TODO: Do any necessary changes in order to avoid to keep the attribute values encapsulated
+// TODO: Do any necessary changes
 public class SpecialAttribute {
 
   private String name;
