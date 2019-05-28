@@ -9,5 +9,6 @@ public class Application {
   }
 
   Application() {
+    EnigmaMachine enigmaMachine = new EnigmaMachine();
   }
 }
