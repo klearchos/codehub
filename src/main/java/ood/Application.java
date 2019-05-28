@@ -11,10 +11,23 @@ class Application {
   Application() {
     EnigmaMachine enigmaMachine = new EnigmaMachine();
     enigmaMachine.setMode(EnigmaMode.ENCRYPT_A);
-    String encryptedA = enigmaMachine.applyAlgorithm(TEXT);
-    System.out.println(encryptedA);
+    String encrypted = enigmaMachine.applyAlgorithm(TEXT);
+    System.out.println(encrypted);
+    enigmaMachine.setMode(EnigmaMode.ENCRYPT_B);
+    encrypted = enigmaMachine.applyAlgorithm(encrypted);
+    System.out.println(encrypted);
+    enigmaMachine.setMode(EnigmaMode.ENCRYPT_C);
+    encrypted = enigmaMachine.applyAlgorithm(encrypted);
+    System.out.println(encrypted);
+
+    enigmaMachine.setMode(EnigmaMode.DECRYPT_C);
+    String decrypted = enigmaMachine.applyAlgorithm(encrypted);
+    System.out.println(decrypted);
+    enigmaMachine.setMode(EnigmaMode.DECRYPT_B);
+    decrypted = enigmaMachine.applyAlgorithm(decrypted);
+    System.out.println(decrypted);
     enigmaMachine.setMode(EnigmaMode.DECRYPT_A);
-    String decryptedA = enigmaMachine.applyAlgorithm(encryptedA);
-    System.out.println(decryptedA);
+    decrypted = enigmaMachine.applyAlgorithm(decrypted);
+    System.out.println(decrypted);
   }
 }
