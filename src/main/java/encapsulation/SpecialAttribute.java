@@ -4,6 +4,8 @@ import java.io.Serializable;
 
 public class SpecialAttribute implements Serializable {
 
+  private static final long serialVersionUID = 98237465L;
+
   private String name;
   private String value;
 

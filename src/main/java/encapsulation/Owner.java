@@ -3,6 +3,9 @@ package encapsulation;
 import java.io.Serializable;
 
 public class Owner implements Serializable {
+
+  private static final long serialVersionUID = 51247468L;
+
   private String name;
   private String surname;
 

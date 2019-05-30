@@ -1,6 +1,6 @@
 package commons;
 
-import static org.junit.Assert.assertTrue;
+import static junit.framework.TestCase.assertEquals;
 
 import java.util.stream.Collectors;
 import org.apache.commons.collections4.BidiMap;
@@ -12,12 +12,12 @@ public class IntroduceBidiMapTest {
   public void initialiseDataStructure() {
     IntroduceBidiMap bmp = new IntroduceBidiMap();
     BidiMap<Integer, String> bidiMap =  bmp.initialiseDataStructure();
-    assertTrue(bidiMap.size() == 3);
+    assertEquals(3, bidiMap.size());
     String result = bidiMap.values().stream().collect(Collectors.joining(","));
     System.out.println(result);
-    assertTrue("ONE,TWO,THREE".equals(result));
-    result = bidiMap.keySet().stream().map(entry -> String.valueOf(entry)).collect(Collectors.joining(","));
+    assertEquals("ONE,TWO,THREE", result);
+    result = bidiMap.keySet().stream().map(String::valueOf).collect(Collectors.joining(","));
     System.out.println(result);
-    assertTrue("1,2,3".equals(result));
+    assertEquals("1,2,3", result);
   }
 }
