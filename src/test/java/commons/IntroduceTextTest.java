@@ -9,7 +9,7 @@ public class IntroduceTextTest {
   @Test
   public void convertCases() {
     IntroduceText text = new IntroduceText();
-    assertEquals("this is a sentence in capitals",
+    assertEquals("This is a sentence in capitals",
         text.convertCases(IntroduceText.CAPITALS));
   }
 
