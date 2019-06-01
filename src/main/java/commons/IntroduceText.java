@@ -2,7 +2,7 @@ package commons;
 
 public class IntroduceText {
 
-  public static final String CAPITALS = "THIS IS A SENTENCE IN CAPITALS";
+  public static final String CAPITALS = "tHIS IS A SENTENCE IN CAPITALS";
 
   public static void main(String[] args) {
     new IntroduceText();
