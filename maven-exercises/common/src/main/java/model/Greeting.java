@@ -1,6 +1,6 @@
 package model;
 
-public class Greeting implements Cloneable {
+public class Greeting {
 
   private final long id;
   private final String content;
