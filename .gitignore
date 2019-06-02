@@ -80,7 +80,7 @@ fabric.properties
 # Editor-based Rest Client
 .idea/httpRequests
 ### Maven template
-/target/
+target
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
