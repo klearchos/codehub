@@ -50,7 +50,8 @@ the compilation of a module if the line test code coverage is under 80%.
 spotbugs plugin. It reports that 1 bug has been found.
 15. Run `mvn spotbugs:gui -pl common`.
 16. Notice the bug report and fix it.
-17. Run the application by typing `mvn spring-boot:run -pl web`
-18. Open a browser and enter the following url: `http://localhost:8080/greeting?name=Code.Hub`
+17. Check all the SpotBugs descriptions (https://spotbugs.readthedocs.io/en/stable/bugDescriptions.html).
+18. Run the application by typing `mvn spring-boot:run -pl web`
+19. Open a browser and enter the following url: `http://localhost:8080/greeting?name=Code.Hub`
 
 All the plugins can be easily integrated in almost any common IDE.
