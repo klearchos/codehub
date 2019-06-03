@@ -53,5 +53,11 @@ spotbugs plugin. It reports that 1 bug has been found.
 17. Check all the SpotBugs descriptions (https://spotbugs.readthedocs.io/en/stable/bugDescriptions.html).
 18. Run the application by typing `mvn spring-boot:run -pl web`
 19. Open a browser and enter the following url: `http://localhost:8080/greeting?name=Code.Hub`
+20. Create a new module `service`.
+21. Add a new class `Hashnput` with the following signature `String hash(String input)`.
+22. Include the `commons-lang3` dependency only for the service module. Control the version of 
+the dependency on the parent pom.
+23. Use the new class/method from the `GreetingController` in order to hash a provided input.
+Ignore the Spring's DI for this example.
 
 All the plugins can be easily integrated in almost any common IDE.
