@@ -1,4 +1,4 @@
-package ood;
+package ood.enigma;
 
 public enum EnigmaMode {
   ENCRYPT_A,

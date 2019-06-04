@@ -1,4 +1,4 @@
-package ood;
+package ood.enigma;
 
 class Application {
 
