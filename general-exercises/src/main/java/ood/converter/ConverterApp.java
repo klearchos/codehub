@@ -7,10 +7,10 @@ public class ConverterApp {
   }
 
   public ConverterApp() {
-    AbstractConverter upperCaseConverter = new UpperCaseConverter(null);
-    AbstractConverter binaryConverter = new BinaryConverter(upperCaseConverter);
-    AbstractConverter octalConverter = new OctalConverter(binaryConverter);
-    AbstractConverter hexadecimalConverter = new HexadecimalConverter(octalConverter);
+    Converter upperCaseConverter = new UpperCaseConverter(null);
+    Converter binaryConverter = new BinaryConverter(upperCaseConverter);
+    Converter octalConverter = new OctalConverter(binaryConverter);
+    Converter hexadecimalConverter = new HexadecimalConverter(octalConverter);
 
     hexadecimalConverter.handle(36);
     hexadecimalConverter.handle("Test");

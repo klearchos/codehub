@@ -1,10 +1,10 @@
 package ood.converter;
 
-public abstract class AbstractConverter {
+public class Converter {
 
-  private final AbstractConverter next;
+  private final Converter next;
 
-  protected AbstractConverter(AbstractConverter next) {
+  protected Converter(Converter next) {
     this.next = next;
   }
 

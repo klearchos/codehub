@@ -10,16 +10,6 @@ public class VirtualDocument extends AbstractDocument implements Document {
     super(title, url);
   }
 
-//  @Override
-//  public String getTitle() {
-//    return super.getTitle();
-//  }
-
-//  @Override
-//  public URL getUrl() {
-//    return super.getUrl();
-//  }
-
   @Override
   public byte[] retrieveDocument() {
     if (realDocument == null) {

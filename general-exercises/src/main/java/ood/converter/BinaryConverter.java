@@ -1,8 +1,8 @@
 package ood.converter;
 
-public class BinaryConverter extends AbstractConverter {
+public class BinaryConverter extends Converter {
 
-  protected BinaryConverter(AbstractConverter next) {
+  protected BinaryConverter(Converter next) {
     super(next);
   }
 

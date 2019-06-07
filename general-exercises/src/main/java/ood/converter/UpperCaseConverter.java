@@ -1,8 +1,8 @@
 package ood.converter;
 
-public class UpperCaseConverter extends AbstractConverter {
+public class UpperCaseConverter extends Converter {
 
-  protected UpperCaseConverter(AbstractConverter next) {
+  protected UpperCaseConverter(Converter next) {
     super(next);
   }
 

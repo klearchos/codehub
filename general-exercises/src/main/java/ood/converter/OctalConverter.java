@@ -1,8 +1,8 @@
 package ood.converter;
 
-public class OctalConverter extends AbstractConverter {
+public class OctalConverter extends Converter {
 
-  protected OctalConverter(AbstractConverter next) {
+  protected OctalConverter(Converter next) {
     super(next);
   }
 

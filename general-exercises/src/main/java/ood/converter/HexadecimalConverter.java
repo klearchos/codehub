@@ -1,8 +1,8 @@
 package ood.converter;
 
-public class HexadecimalConverter extends AbstractConverter {
+public class HexadecimalConverter extends Converter {
 
-  protected HexadecimalConverter(AbstractConverter next) {
+  protected HexadecimalConverter(Converter next) {
     super(next);
   }
 

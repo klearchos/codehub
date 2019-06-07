@@ -8,12 +8,12 @@ import static org.mockito.Mockito.verify;
 import org.junit.Before;
 import org.junit.Test;
 
-public class CoverterTest {
+public class ConverterTest {
 
-  AbstractConverter upperCaseConverter;
-  AbstractConverter binaryConverter;
-  AbstractConverter octalConverter;
-  AbstractConverter hexadecimalConverter;
+  Converter upperCaseConverter;
+  Converter binaryConverter;
+  Converter octalConverter;
+  Converter hexadecimalConverter;
 
   @Before
   public void setupChain() {
