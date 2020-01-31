@@ -20,7 +20,7 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<com.github.spotbugs-plugin.version>3.1.11</com.github.spotbugs-plugin.version>
-		<com.puppycrawl.tools.version>8.20</com.puppycrawl.tools.version>
+		<com.puppycrawl.tools.version>8.29</com.puppycrawl.tools.version>
 		<checkstyle-maven-plugin.version>3.0.0</checkstyle-maven-plugin.version>
 		<com.github.spotbugs.version>3.1.12</com.github.spotbugs.version>
 		<jacoco-maven-plugin.version>0.8.2</jacoco-maven-plugin.version>
